@@ -5,6 +5,9 @@ import (
 	"reflect"
 )
 
+// biến toàn cục
+var d int = 4
+
 func main() {
 	//cú pháp
 	//var + variable name + datatype + value
@@ -48,4 +51,8 @@ func main() {
 	if zt == reflect.String {
 		println(">> z is string")
 	}
+
+	//biến cục bộ
+	fmt.Printf("d=%d\n", d)
+	//nếu trong 1 hàm có biến cục bộ và biến toàn cục trùng tên thì hệ thống sẽ ưu tiên lấy biến cục bộ để sử dụng
 }
